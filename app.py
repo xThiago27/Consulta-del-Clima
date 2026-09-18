@@ -206,10 +206,11 @@ st.subheader("📍 Elegí una ciudad")
 # Form permite que Enter en el campo de texto envíe la consulta.
 with st.form("formulario_clima"):
     
-    ciudad = st.text_input 
-             st.selectbox(
+    ciudad = st.text_input or  st.selectbox(
+   if st.selectbox:         
     "Opciones predeterminadas",
         ["— Seleccionar una ciudad —"] + CIUDADES_SUGERIDAS
+    else
         "Escribe una ciudad",
         placeholder="Ejemplo: Buenos Aires"
     )
