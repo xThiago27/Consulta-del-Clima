@@ -210,8 +210,6 @@ with st.form("formulario_clima"):
     "Escribe una ciudad",
       ["— Seleccionar una ciudad —"] + CIUDADES_SUGERIDAS
     )
-input(enter)
-enter=consultar
     consultar = st.form_submit_button(
         "🔎 Consultar clima",
         use_container_width=True
