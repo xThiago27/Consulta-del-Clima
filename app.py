@@ -207,15 +207,15 @@ st.subheader("📍 Elegí una ciudad")
 with st.form("formulario_clima"):
     
     ciudad = st.selectbox(       
-    "Opciones predeterminadas",
-        ["— Seleccionar una ciudad —"] + CIUDADES_SUGERIDAS
+    "Escribe una ciudad",
+    placeholder="Ejemplo: Buenos Aires"
+    ["— Seleccionar una ciudad —"] + CIUDADES_SUGERIDAS
     )
 
     consultar = st.form_submit_button(
         "🔎 Consultar clima",
         use_container_width=True
     )
-
 
 if consultar:
 
