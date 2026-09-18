@@ -22,10 +22,10 @@ CIUDADES_SUGERIDAS = [
     "Mendoza",
     "La Plata",
     "Mar del Plata",
-    "Madrid",
-    "Londres",
-    "Nueva York",
-    "Tokio",
+    "Bariloche",
+    "Salta",
+    "Puerto Iguazú",
+    "Ushuaia",
 ]
 
 
@@ -205,12 +205,7 @@ st.subheader("📍 Elegí una ciudad")
 
 # Form permite que Enter en el campo de texto envíe la consulta.
 with st.form("formulario_clima"):
-
-    ciudad_sugerida = st.selectbox(
-        "Opciones predeterminadas",
-        ["— Seleccionar una ciudad —"] + CIUDADES_SUGERIDAS
-    )
-
+    
     ciudad = st.text_input(
         "O escribí una ciudad",
         placeholder="Ejemplo: Buenos Aires"
