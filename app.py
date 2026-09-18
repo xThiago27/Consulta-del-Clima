@@ -208,8 +208,7 @@ with st.form("formulario_clima"):
     
     ciudad = st.selectbox(       
     "Escribe una ciudad",
-    placeholder="Ejemplo: Buenos Aires"
-    ["— Seleccionar una ciudad —"] + CIUDADES_SUGERIDAS
+      ["— Seleccionar una ciudad —"] + CIUDADES_SUGERIDAS
     )
 
     consultar = st.form_submit_button(
